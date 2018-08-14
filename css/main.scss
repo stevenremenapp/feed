@@ -1,0 +1,48 @@
+
+$pink: #fb12e8;
+$white: #fff;
+$bright-blue: #6fd3ed;
+$dark-blue: #034b69;
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+}
+
+.nav-text-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 400px;
+    a {
+        text-decoration: none;
+        color: $bright-blue;
+        padding: 1rem;
+        font-size: 2.4rem;
+        &:hover {
+            color: green;
+        }
+    }
+}
+
+#logo {
+    width: 100px;
+    // height: auto;
+}
+
+.hero {
+    background: no-repeat center / cover url('../img/cityscape.jpg');
+    height: 100vh;
+    margin: 0;
+}

@@ -1,8 +1,56 @@
-/* Colors:
+html {
+  font-size: 10px;
+}
 
-Hot pink: #fb12e8
-Bright blue: #6fd3ed
-Dark blue: #034b69
- */
+body {
+  font-size: 1.6rem;
+}
 
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 10px 20px;
+}
 
+.nav-text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 400px;
+}
+
+.nav-text-container a {
+  text-decoration: none;
+  color: #6fd3ed;
+  padding: 1rem;
+  font-size: 2.4rem;
+}
+
+.nav-text-container a:hover {
+  color: green;
+}
+
+#logo {
+  width: 100px;
+}
+
+.hero {
+  background: no-repeat center/cover url("../img/cityscape.jpg");
+  height: 100vh;
+  margin: 0;
+}
+/*# sourceMappingURL=main.css.map */
