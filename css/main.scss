@@ -8,10 +8,6 @@ html {
     font-size: 10px;
 }
 
-body {
-    font-size: 1.6rem;
-}
-
 nav {
     display: flex;
     align-items: center;
@@ -24,14 +20,16 @@ nav {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    width: 400px;
+    width: 600px;
+    font-family: 'Questrial', sans-serif;
     a {
         text-decoration: none;
         color: $bright-blue;
         padding: 1rem;
-        font-size: 2.4rem;
+        font-size: 2rem;
+        transition: 1s;
         &:hover {
-            color: green;
+            text-decoration: underline $pink;
         }
     }
 }
@@ -42,7 +40,60 @@ nav {
 }
 
 .hero {
-    background: no-repeat center / cover url('../img/cityscape.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.7)), no-repeat center / cover url('../img/cityscape.jpg');
     height: 100vh;
     margin: 0;
+    color: $white;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 85vh;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    div,
+    img {
+        padding: 20px;
+    }
+}
+
+#center-hero {
+    display: flex;
+    align-items: center;
+}
+
+.main-header {
+    font-size: 5.6rem;
+    margin: 0;
+    font-family: 'Reem Kufi', sans-serif;
+    text-transform: uppercase;
+}
+
+.header-text {
+    font-size: 2.4rem;
+    font-family: 'Questrial', sans-serif;
+}
+
+#hero-button {
+    background: $pink;
+    color: $white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: 'Questrial', sans-serif;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s;
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+}
+
+.general-text {
+    font-size: 1.6rem;
+    font-family: 'Questrial', sans-serif;
 }

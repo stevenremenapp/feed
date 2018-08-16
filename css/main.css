@@ -2,10 +2,6 @@ html {
   font-size: 10px;
 }
 
-body {
-  font-size: 1.6rem;
-}
-
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,18 +26,22 @@ nav {
           justify-content: space-evenly;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 400px;
+  width: 600px;
+  font-family: 'Questrial', sans-serif;
 }
 
 .nav-text-container a {
   text-decoration: none;
   color: #6fd3ed;
   padding: 1rem;
-  font-size: 2.4rem;
+  font-size: 2rem;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .nav-text-container a:hover {
-  color: green;
+  -webkit-text-decoration: underline #fb12e8;
+          text-decoration: underline #fb12e8;
 }
 
 #logo {
@@ -49,8 +49,76 @@ nav {
 }
 
 .hero {
-  background: no-repeat center/cover url("../img/cityscape.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.7))), no-repeat center/cover url("../img/cityscape.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.7)), no-repeat center/cover url("../img/cityscape.jpg");
   height: 100vh;
   margin: 0;
+  color: #fff;
+}
+
+.hero-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 85vh;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero-content div,
+.hero-content img {
+  padding: 20px;
+}
+
+#center-hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-header {
+  font-size: 5.6rem;
+  margin: 0;
+  font-family: 'Reem Kufi', sans-serif;
+  text-transform: uppercase;
+}
+
+.header-text {
+  font-size: 2.4rem;
+  font-family: 'Questrial', sans-serif;
+}
+
+#hero-button {
+  background: #fb12e8;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-family: 'Questrial', sans-serif;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#hero-button:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.general-text {
+  font-size: 1.6rem;
+  font-family: 'Questrial', sans-serif;
 }
 /*# sourceMappingURL=main.css.map */
