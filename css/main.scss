@@ -3,6 +3,7 @@ $pink: #fb12e8;
 $white: #fff;
 $bright-blue: #6fd3ed;
 $dark-blue: #034b69;
+$gray: #ededed;
 
 html {
     font-size: 10px;
@@ -72,6 +73,26 @@ nav {
     text-transform: uppercase;
 }
 
+.secondary-header {
+    font-size: 4rem;
+    font-family: 'Reem Kufi', sans-serif;
+    text-transform: uppercase;
+    opacity: 0.8;
+    margin: 0 auto 5rem;
+    display: inline-block;
+    &:after {
+        content: '';
+        display: block;
+        height: 15px;
+        position: relative;
+        width: 100%;
+        background-color: $pink;
+        margin: 0 auto;
+        margin-top: -22px;
+        z-index: -1;
+    }
+}
+
 .header-text {
     font-size: 2.4rem;
     font-family: 'Questrial', sans-serif;
@@ -96,4 +117,69 @@ nav {
 .general-text {
     font-size: 1.6rem;
     font-family: 'Questrial', sans-serif;
+}
+
+.features {
+    background: $gray;
+    padding: 5rem 0 7rem;
+    font-family: 'Questrial', sans-serif;
+    text-align: center;
+}
+
+.features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.features-feature-div {
+    flex-basis: 0;
+    flex-grow: 1;
+    background: rgba(111, 211, 237, 0.6);
+    padding: 1.5rem;
+    margin: 1.5rem;
+    border-radius: 4px;
+    transition: all 0.5s;
+    font-size: 1.6rem;
+    text-align: left;
+    &:hover {
+        transform: scale(1.05) translateY(-10px);
+    }
+}
+
+.features-header {
+    text-align: center;
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.features-icon {
+    font-size: 8rem;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    color: $dark-blue;
+}
+
+.features-checkmark {
+    float: left;
+    margin-right: 0.5rem;
+    color: $dark-blue;
+    font-size: 1.6rem;
+}
+
+.testimonials {
+    text-align: center;
+    // background: rgba(111, 211, 237, 0.6);
+    background: rgb(3, 74, 105);
+    padding: 5rem 0 7rem;
+}
+
+.testimonials-headshot {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
 }
