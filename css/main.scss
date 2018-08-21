@@ -225,3 +225,95 @@ nav {
         transform: translateY(-2px);
     }
 }
+
+.pricing-and-install {
+    text-align: center;
+    background: $gray;
+    padding: 5rem 0 5rem;
+    font-size: 1.6rem;
+    font-family: 'Questrial', sans-serif;
+}
+
+.pricing-install-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pricing-install-cost-container {
+    background: rgba($color: $pink, $alpha: 0.3);
+    border-radius: 4px;
+    box-shadow: 0 15px 38px rgba($color: #000, $alpha: 0.2);
+    a {
+        padding: 15px 0;
+        margin-top: 20px;
+        color: $white;
+        background: $dark-blue;
+        text-decoration: none;
+        border-radius: 0 0 4px 4px;
+        transition: all 0.5s;
+        &:hover {
+            background: #04638a;
+        }
+    }
+}
+
+.pricing-install-search-container {
+    border-radius: 0 4px 4px 0;
+    background: rgba($color: $bright-blue, $alpha: 0.6);
+    box-shadow: 10px 15px 38px rgba($color: #000, $alpha: 0.2);
+}
+
+.pricing-install-header {
+    border-bottom: 2px solid rgba($color: $dark-blue, $alpha: 0.3);
+    text-transform: uppercase;
+}
+
+.pricing-install-cost-info {
+    margin: 40px 70px;
+    min-width: 225px;
+    text-align: left;
+    p {
+        padding: 8px 0 8px 0;
+    }
+}
+
+.pricing-install-search {
+    border-radius: 4px;
+}
+
+.pricing-install-search-form {
+    p {
+        max-width: 350px;
+        margin: 20px;
+        line-height: 1.5;
+    }
+    input,
+    button {
+        padding: 5px;
+        margin: 12px 0 44px 0;
+    }
+    input {
+        margin-right: -4px;
+    }
+    button {
+        background: $dark-blue;
+        color: $white;
+        border: 2px solid $dark-blue;
+        border-radius: 0 4px 4px 0;
+        cursor: pointer;
+    }
+}
+
+.pricing-install-icon {
+    float: left;
+    margin-right: 0.5rem;
+    color: $dark-blue;
+    font-size: 1.6rem;
+    padding: 8px 0 8px 0;
+}
+
+.pricing-install-contact-button {
+    display: block;
+}
