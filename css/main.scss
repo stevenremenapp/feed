@@ -35,7 +35,7 @@ nav {
     }
 }
 
-#logo {
+.logo {
     width: 100px;
 }
 
@@ -303,6 +303,11 @@ nav {
         border: 2px solid $dark-blue;
         border-radius: 0 4px 4px 0;
         cursor: pointer;
+        transition: all 0.5s;
+        &:hover {
+            background: #04638a;
+            border: 2px solid #04638a;
+        }
     }
 }
 
@@ -316,4 +321,52 @@ nav {
 
 .pricing-install-contact-button {
     display: block;
+}
+
+footer {
+    background: $dark-blue;
+    color: $white;
+    border-top: 2px solid rgba($color: $bright-blue, $alpha: 0.5);
+    font-size: 1.6rem;
+    padding: 30px;
+    font-family: 'Questrial', sans-serif;
+    display: flex;
+}
+
+.footer-nav {
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 2px solid rgba($color: $bright-blue, $alpha: 0.5);
+    a {
+        text-decoration: none;
+        color: $bright-blue;
+        padding: 1rem;
+        font-size: 2rem;
+        transition: 1s;
+        &:hover {
+            text-decoration: underline $pink;
+        }
+    }
+}
+
+.footer-info {
+    text-align: center;
+    flex-basis: 60%;
+    padding: 0 50px;
+}
+
+.footer-socials {
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: 2px solid rgba($color: $bright-blue, $alpha: 0.5);
+    a {
+        color: $white;
+        font-size: 3rem;
+        padding: 10px;
+    }
 }

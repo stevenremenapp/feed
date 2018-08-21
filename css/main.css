@@ -44,7 +44,7 @@ nav {
           text-decoration: underline #fb12e8;
 }
 
-#logo {
+.logo {
   width: 100px;
 }
 
@@ -365,6 +365,13 @@ nav {
   border: 2px solid #034b69;
   border-radius: 0 4px 4px 0;
   cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.pricing-install-search-form button:hover {
+  background: #04638a;
+  border: 2px solid #04638a;
 }
 
 .pricing-install-icon {
@@ -377,5 +384,79 @@ nav {
 
 .pricing-install-contact-button {
   display: block;
+}
+
+footer {
+  background: #034b69;
+  color: #fff;
+  border-top: 2px solid rgba(111, 211, 237, 0.5);
+  font-size: 1.6rem;
+  padding: 30px;
+  font-family: 'Questrial', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-nav {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-right: 2px solid rgba(111, 211, 237, 0.5);
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: #6fd3ed;
+  padding: 1rem;
+  font-size: 2rem;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.footer-nav a:hover {
+  -webkit-text-decoration: underline #fb12e8;
+          text-decoration: underline #fb12e8;
+}
+
+.footer-info {
+  text-align: center;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  padding: 0 50px;
+}
+
+.footer-socials {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-left: 2px solid rgba(111, 211, 237, 0.5);
+}
+
+.footer-socials a {
+  color: #fff;
+  font-size: 3rem;
+  padding: 10px;
 }
 /*# sourceMappingURL=main.css.map */
