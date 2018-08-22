@@ -22,6 +22,12 @@ nav {
   z-index: 10;
 }
 
+.nav-active-location {
+  -webkit-text-decoration: underline #fb12e8 !important;
+          text-decoration: underline #fb12e8 !important;
+  color: #fb12e8 !important;
+}
+
 .nav-text-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -33,8 +39,21 @@ nav {
       flex-wrap: wrap;
   width: 600px;
   position: fixed;
+  top: 0;
   right: 0;
   font-family: 'Questrial', sans-serif;
+  list-style-type: none;
+}
+
+.nav-text-container li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .nav-text-container a {
@@ -42,13 +61,13 @@ nav {
   color: #6fd3ed;
   padding: 1rem;
   font-size: 2rem;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
-.nav-text-container a:hover {
-  -webkit-text-decoration: underline #fb12e8;
-          text-decoration: underline #fb12e8;
+.nav-text-container a:hover, .nav-text-container a:active {
+  -webkit-text-decoration: underline #6fd3ed;
+          text-decoration: underline #6fd3ed;
 }
 
 .logo {
@@ -406,6 +425,7 @@ footer {
   border-top: 2px solid rgba(111, 211, 237, 0.5);
   font-size: 1.6rem;
   padding: 30px;
+  padding-right: 0;
   font-family: 'Questrial', sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -437,7 +457,7 @@ footer {
   transition: 1s;
 }
 
-.footer-nav a:hover {
+.footer-nav a:hover, .footer-nav a:active {
   -webkit-text-decoration: underline #fb12e8;
           text-decoration: underline #fb12e8;
 }

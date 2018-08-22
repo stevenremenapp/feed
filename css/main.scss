@@ -24,22 +24,35 @@ nav {
     z-index: 10;
 }
 
+.nav-active-location {
+    text-decoration: underline $pink !important;
+    color: $pink !important;
+}
+
 .nav-text-container {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     width: 600px;
     position: fixed;
+    top: 0;
     right: 0;
     font-family: 'Questrial', sans-serif;
+    list-style-type: none;
+    li {
+        display: flex;
+        align-items: center;
+        transition: all 0.5s;
+    }
     a {
         text-decoration: none;
         color: $bright-blue;
         padding: 1rem;
         font-size: 2rem;
-        transition: 1s;
-        &:hover {
-            text-decoration: underline $pink;
+        transition: all 0.5s;
+        &:hover,
+        &:active {
+            text-decoration: underline $bright-blue;
         }
     }
 }
@@ -344,6 +357,7 @@ footer {
     border-top: 2px solid rgba($color: $bright-blue, $alpha: 0.5);
     font-size: 1.6rem;
     padding: 30px;
+    padding-right: 0;
     font-family: 'Questrial', sans-serif;
     display: flex;
 }
@@ -360,7 +374,8 @@ footer {
         padding: 1rem;
         font-size: 2rem;
         transition: 1s;
-        &:hover {
+        &:hover,
+        &:active {
             text-decoration: underline $pink;
         }
     }
