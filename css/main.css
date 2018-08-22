@@ -326,6 +326,7 @@ nav {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 4rem 0 5rem;
+  padding: 0 3rem;
 }
 
 .pricing-install-cost-container {
@@ -363,13 +364,12 @@ nav {
 }
 
 .pricing-install-cost-info {
-  margin: 40px 70px;
-  min-width: 225px;
+  margin: 4rem 6rem;
   text-align: left;
 }
 
 .pricing-install-cost-info p {
-  padding: 8px 0 8px 0;
+  padding: 0.8rem 0 0.8rem 0;
 }
 
 .pricing-install-search {
@@ -452,7 +452,6 @@ footer {
   text-decoration: none;
   color: #6fd3ed;
   padding: 1rem;
-  font-size: 2rem;
   -webkit-transition: 1s;
   transition: 1s;
 }

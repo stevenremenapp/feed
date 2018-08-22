@@ -267,6 +267,7 @@ nav {
     align-items: center;
     flex-wrap: wrap;
     margin: 4rem 0 5rem;
+    padding: 0 3rem;
 }
 
 .pricing-install-cost-container {
@@ -299,11 +300,11 @@ nav {
 }
 
 .pricing-install-cost-info {
-    margin: 40px 70px;
-    min-width: 225px;
+    margin: 4rem 6rem;
+    // min-width: 225px;
     text-align: left;
     p {
-        padding: 8px 0 8px 0;
+        padding: 0.8rem 0 0.8rem 0;
     }
 }
 
@@ -372,7 +373,6 @@ footer {
         text-decoration: none;
         color: $bright-blue;
         padding: 1rem;
-        font-size: 2rem;
         transition: 1s;
         &:hover,
         &:active {
