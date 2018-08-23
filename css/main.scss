@@ -14,9 +14,20 @@ nav {
     top: 0;
     display: flex;
     align-items: center;
-    padding: 10px 20px;
+    padding: 1rem 2rem;
     width: 100%;
     transition: all 1s;
+}
+
+.nav-icon {
+    display: none;
+}
+
+.nav-icon-mobile {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem 0;
 }
 
 .nav-solid-background {
@@ -27,6 +38,14 @@ nav {
 .nav-active-location {
     text-decoration: underline $pink !important;
     color: $pink !important;
+}
+
+.nav-no-padding {
+    padding: 0;
+}
+
+.nav-mobile-container {
+    display: none;
 }
 
 .nav-text-container {
@@ -59,6 +78,13 @@ nav {
 
 .logo {
     width: 100px;
+}
+
+.logo-mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1rem 2rem;
 }
 
 .hero {
@@ -301,10 +327,10 @@ nav {
 
 .pricing-install-cost-info {
     margin: 4rem 6rem;
-    // min-width: 225px;
+    min-width: 225px;
     text-align: left;
     p {
-        padding: 0.8rem 0 0.8rem 0;
+        padding: 8px 0 8px 0;
     }
 }
 
@@ -384,7 +410,7 @@ footer {
 .footer-info {
     text-align: center;
     flex-basis: 60%;
-    padding: 0 50px;
+    padding: 0 5rem;
     .footer-side-effects {
         font-size: 1rem;
     }
@@ -403,6 +429,75 @@ footer {
         padding: 10px;
         &:hover {
             color: $bright-blue;
+        }
+    }
+}
+
+// MEDIA QUERIES
+
+@media screen and (max-width: 811px) {
+    .main-header {
+        font-size: 4.6rem;
+    }
+    .header-text {
+        font-size: 2rem;
+    }
+    .testimonials-testimonial-div {
+        width: 70%;
+    }
+    .pricing-and-install {
+        padding: 7rem 0;
+    }
+    .pricing-install-search-container {
+        margin-top: 8rem;
+    }
+    .footer-info {
+        padding: 0 3rem;
+    }
+}
+
+@media screen and (max-width: 731px) {
+    .nav-text-container {
+        display: none;
+    }
+    .nav-icon {
+        display: block;
+        position: absolute;
+        right: 6rem;
+        font-size: 3rem;
+        cursor: pointer;
+        color: $bright-blue;
+    }
+    .nav-mobile-container {
+        // display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        list-style-type: none;
+        margin: -1rem -2rem;
+        padding: 0;
+        background: $dark-blue;
+        li {
+            &:not(:first-of-type) {
+                padding-top: 2rem;
+                border-top: 2px solid rgba($color: $bright-blue, $alpha: 0.5);
+            }
+            &:not(:last-of-type) {
+                padding-bottom: 1.35rem;
+            }
+        }
+        a {
+            font-family: 'Reem Kufi', sans-serif;
+            font-size: 4rem;
+            font-weight: lighter;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: $white;
+            &:hover {
+                color: $pink;
+            }
         }
     }
 }

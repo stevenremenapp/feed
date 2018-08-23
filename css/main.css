@@ -11,10 +11,21 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px 20px;
+  padding: 1rem 2rem;
   width: 100%;
   -webkit-transition: all 1s;
   transition: all 1s;
+}
+
+.nav-icon {
+  display: none;
+}
+
+.nav-icon-mobile {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem 0;
 }
 
 .nav-solid-background {
@@ -26,6 +37,14 @@ nav {
   -webkit-text-decoration: underline #fb12e8 !important;
           text-decoration: underline #fb12e8 !important;
   color: #fb12e8 !important;
+}
+
+.nav-no-padding {
+  padding: 0;
+}
+
+.nav-mobile-container {
+  display: none;
 }
 
 .nav-text-container {
@@ -72,6 +91,13 @@ nav {
 
 .logo {
   width: 100px;
+}
+
+.logo-mobile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem 2rem;
 }
 
 .hero {
@@ -365,11 +391,12 @@ nav {
 
 .pricing-install-cost-info {
   margin: 4rem 6rem;
+  min-width: 225px;
   text-align: left;
 }
 
 .pricing-install-cost-info p {
-  padding: 0.8rem 0 0.8rem 0;
+  padding: 8px 0 8px 0;
 }
 
 .pricing-install-search {
@@ -465,7 +492,7 @@ footer {
   text-align: center;
   -ms-flex-preferred-size: 60%;
       flex-basis: 60%;
-  padding: 0 50px;
+  padding: 0 5rem;
 }
 
 .footer-info .footer-side-effects {
@@ -499,5 +526,76 @@ footer {
 
 .footer-socials a:hover {
   color: #6fd3ed;
+}
+
+@media screen and (max-width: 811px) {
+  .main-header {
+    font-size: 4.6rem;
+  }
+  .header-text {
+    font-size: 2rem;
+  }
+  .testimonials-testimonial-div {
+    width: 70%;
+  }
+  .pricing-and-install {
+    padding: 7rem 0;
+  }
+  .pricing-install-search-container {
+    margin-top: 8rem;
+  }
+  .footer-info {
+    padding: 0 3rem;
+  }
+}
+
+@media screen and (max-width: 731px) {
+  .nav-text-container {
+    display: none;
+  }
+  .nav-icon {
+    display: block;
+    position: absolute;
+    right: 6rem;
+    font-size: 3rem;
+    cursor: pointer;
+    color: #6fd3ed;
+  }
+  .nav-mobile-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100vh;
+    width: 100vw;
+    list-style-type: none;
+    margin: -1rem -2rem;
+    padding: 0;
+    background: #034b69;
+  }
+  .nav-mobile-container li:not(:first-of-type) {
+    padding-top: 2rem;
+    border-top: 2px solid rgba(111, 211, 237, 0.5);
+  }
+  .nav-mobile-container li:not(:last-of-type) {
+    padding-bottom: 1.35rem;
+  }
+  .nav-mobile-container a {
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 4rem;
+    font-weight: lighter;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+  }
+  .nav-mobile-container a:hover {
+    color: #fb12e8;
+  }
 }
 /*# sourceMappingURL=main.css.map */
