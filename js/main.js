@@ -1,4 +1,4 @@
-// Change background on fixed header with scroll
+// Change nav background on fixed header with scroll
 
 let nav = document.querySelector('nav');
 

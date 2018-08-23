@@ -500,4 +500,20 @@ footer {
             }
         }
     }
+    footer {
+        flex-direction: column;
+        padding: 3rem;
+    }
+    .footer-nav {
+        display: none;
+    }
+    .footer-info {
+        margin-bottom: 1rem;
+    }
+    .footer-socials {
+        flex-direction: row;
+        padding-top: 1rem;
+        border-left: none;
+        border-top: 2px solid rgba($color: $bright-blue, $alpha: 0.5);
+    }
 }

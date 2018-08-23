@@ -597,5 +597,27 @@ footer {
   .nav-mobile-container a:hover {
     color: #fb12e8;
   }
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 3rem;
+  }
+  .footer-nav {
+    display: none;
+  }
+  .footer-info {
+    margin-bottom: 1rem;
+  }
+  .footer-socials {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-top: 1rem;
+    border-left: none;
+    border-top: 2px solid rgba(111, 211, 237, 0.5);
+  }
 }
 /*# sourceMappingURL=main.css.map */
