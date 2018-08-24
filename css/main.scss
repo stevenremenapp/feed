@@ -102,8 +102,7 @@ nav {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 20px;
-    div,
-    img {
+    div {
         padding: 20px;
     }
 }
@@ -149,15 +148,15 @@ nav {
 #hero-button {
     background: $pink;
     color: $white;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: bold;
     font-family: 'Questrial', sans-serif;
-    padding: 12px;
+    padding: 1.5rem;
     border: none;
     border-radius: 5px;
     transition: all 0.5s;
+    text-decoration: none;
     &:hover {
-        cursor: pointer;
         background: $dark-blue;
         transform: translateY(-2px);
     }
@@ -500,6 +499,26 @@ footer {
             }
         }
     }
+    .hero-content {
+        flex-direction: column;
+        justify-content: center;
+        div {
+            margin-bottom: 4rem;
+            text-align: center;
+        }
+    }
+    #brain-gif {
+        min-width: 35%;
+        height: 35%;
+    }
+    .features-feature-div {
+        &:nth-of-type(3) {
+            flex-basis: 100%;
+            &:hover {
+                transform: scale(1.02) translateY(-10px);
+            }
+        }
+    }
     footer {
         flex-direction: column;
         padding: 3rem;
@@ -515,5 +534,82 @@ footer {
         padding-top: 1rem;
         border-left: none;
         border-top: 2px solid rgba($color: $bright-blue, $alpha: 0.5);
+    }
+}
+
+@media screen and (max-width: 451px) {
+    .nav-mobile-container a {
+        font-size: 2.6rem;
+    }
+    .hero-content div {
+        margin-bottom: 2.5rem;
+    }
+    .main-header {
+        font-size: 3rem;
+    }
+    .header-text {
+        font-size: 1.8rem;
+    }
+    #brain-gif {
+        min-width: 25%;
+        height: 25%;
+    }
+    .secondary-header {
+        font-size: 2.8rem;
+    }
+    .features {
+        padding-bottom: 6rem;
+    }
+    .features-feature-div {
+        flex-basis: 100%;
+        &:hover {
+            transform: scale(1.02) translateY(-10px);
+        }
+    }
+    .features-header {
+        font-size: 2.2rem;
+    }
+    .testimonials {
+        padding-bottom: 5rem;
+    }
+    .testimonials-testimonial-div {
+        flex-direction: column;
+        &:nth-of-type(2) {
+            margin-bottom: 5rem;
+        }
+    }
+    .testimonials-quote {
+        margin-left: 0;
+        order: -1;
+    }
+    .pricing-and-install {
+        padding-bottom: 5rem;
+    }
+    .pricing-install-container {
+        margin-top: 2rem;
+    }
+    .pricing-install-search-container {
+        padding-bottom: 3rem;
+    }
+    .pricing-install-cost-info {
+        margin: 2rem;
+    }
+    .pricing-install-search-form {
+        input,
+        button {
+            padding: 5px;
+            margin: 0;
+        }
+        input {
+            width: 70%;
+            margin-right: 0;
+        }
+        button {
+            width: 74%;
+            display: block;
+            margin: 0 auto;
+            border: 2px solid $dark-blue;
+            border-radius: 0 0 4px 4px;
+        }
     }
 }
