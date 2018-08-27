@@ -612,4 +612,14 @@ footer {
             border-radius: 0 0 4px 4px;
         }
     }
+
+// Adjust header for when height of screen is too short to contain content
+@media screen and (max-height: 475px) {
+    .hero {
+        height: 475px;
+    }
+    .hero-content {
+        height: 475px;
+    }
+}
 }

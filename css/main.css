@@ -726,4 +726,13 @@ footer {
     border-radius: 0 0 4px 4px;
   }
 }
+
+@media screen and (max-width: 451px) and (max-height: 475px) {
+  .hero {
+    height: 475px;
+  }
+  .hero-content {
+    height: 475px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
