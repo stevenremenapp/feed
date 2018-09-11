@@ -527,6 +527,25 @@ footer {
   color: #6fd3ed;
 }
 
+noscript {
+  color: #fb12e8;
+  font-family: 'Questrial', sans-serif;
+  font-size: 6rem;
+  text-align: center;
+}
+
+noscript div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 98vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 6rem;
+  background: rgba(3, 75, 105, 0.9);
+}
+
 @media screen and (max-width: 811px) {
   .main-header {
     font-size: 4.6rem;
