@@ -234,7 +234,12 @@ nav {
     margin: 0 auto;
     margin-bottom: 7rem;
     margin-top: 2rem;
-    background: linear-gradient(rgba(255, 255, 255, 0.5));
+    // background: linear-gradient(rgba(255, 255, 255, 0.5));
+    // http://www.colorzilla.com/gradient-editor/ used to make linear gradients appear on IE11
+    background: -moz-linear-gradient(top, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.5) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255,255,255,0.5) 0%,rgba(255,255,255,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#80ffffff',GradientType=0 ); /* IE6-9 */
     border-radius: 4px;
     text-align: left;
     padding: 2rem;
@@ -522,6 +527,8 @@ noscript {
         div {
             margin-bottom: 4rem;
             text-align: center;
+            // Width set so that text in this div in IE11 will wrap
+            width: 100%;
         }
     }
     #brain-gif {
@@ -537,6 +544,7 @@ noscript {
         }
     }
     footer {
+        height: 260px;
         flex-direction: column;
         padding: 3rem;
     }
@@ -550,7 +558,8 @@ noscript {
         flex-direction: row;
         padding-top: 1rem;
         border-left: none;
-        border-top: 2px solid rgba($color: $bright-blue, $alpha: 0.5);
+        padding-top: 2rem;
+        // border-top: 2px solid rgba($color: $bright-blue, $alpha: 0.5);
     }
 }
 
@@ -628,6 +637,9 @@ noscript {
             border: 2px solid $dark-blue;
             border-radius: 0 0 4px 4px;
         }
+    }
+    footer {
+        height: 320px;
     }
 
 // Adjust header for when height of screen is too short to contain content
