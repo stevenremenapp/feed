@@ -165,6 +165,10 @@ nav {
   z-index: -1;
 }
 
+#brain-gif {
+  min-height: 325px;
+}
+
 .header-text {
   font-size: 2.4rem;
   font-family: 'Questrial', sans-serif;
@@ -636,6 +640,7 @@ noscript div {
   }
   #brain-gif {
     min-width: 35%;
+    min-height: 35%;
     height: 35%;
   }
   .features-feature-div:nth-of-type(3) {
