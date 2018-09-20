@@ -88,6 +88,11 @@ nav {
 }
 
 .hero {
+    // Background values adjusted so they show up on Chrome mobile
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.7));
+    background-image: url('../img/cityscape.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.7)), no-repeat center / cover url('../img/cityscape.jpg');
     height: 100vh;
     margin: 0;
@@ -656,11 +661,15 @@ noscript {
     and (max-device-width: 731px)
     and (orientation: landscape) {
         .hero {
-            height: 525px;
-            min-height: 525px;
+            height: 600px;
         }
         .hero-content {
-            height: 525px;
-            min-height: 525px;
+            height: 600px;
+        }
+        .main-header {
+            font-size: 3.5rem;
+        }
+        .nav-mobile-container a {
+            font-size: 1.75rem;
         }
     }
