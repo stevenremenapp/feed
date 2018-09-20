@@ -101,11 +101,6 @@ nav {
 }
 
 .hero {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.7)));
-  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.7));
-  background-image: url("../img/cityscape.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.7))), no-repeat center/cover url("../img/cityscape.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.7)), no-repeat center/cover url("../img/cityscape.jpg");
   height: 100vh;
@@ -561,6 +556,10 @@ noscript div {
 }
 
 @media screen and (max-width: 811px) {
+  .hero {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.7))), no-repeat center/cover url("../img/cityscape-mobile.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.7)), no-repeat center/cover url("../img/cityscape-mobile.jpg");
+  }
   .main-header {
     font-size: 4.6rem;
   }
